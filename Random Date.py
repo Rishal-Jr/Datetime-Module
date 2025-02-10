@@ -3,7 +3,7 @@ import time
 def getdatetime(stardate,enddate):
     print("Printing random date between",stardate,"and",enddate)
     randomgenerator=random.random()
-    dateformate="%m/%d/%y"
+    dateformate="%m/%d/%Y"
     starttime=time.mktime(time.strptime(stardate,dateformate))
     endtime=time.mktime(time.strptime(enddate,dateformate))
     randomtime=starttime+randomgenerator*(endtime-starttime)
